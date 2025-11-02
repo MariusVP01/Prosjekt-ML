@@ -1,0 +1,15 @@
+{
+  "name": "prosjekt-ml",
+  "version": "1.0.0",
+  "description": "ML prosjekt laget med express server",
+  "main": "app2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  }
+}

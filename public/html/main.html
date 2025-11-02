@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmanmeldelse-analyse</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>🎬 Sentiment Analyzer</h1>
+      <p>Skriv inn en filmanmeldelse. Vi sier hvor positiv/negativ den er.</p>
+    </header>
+
+    <main class="container">
+      <section class="card input-card">
+        <label for="reviewText" class="label">Filmanmeldelse</label>
+        <textarea
+          id="reviewText"
+          class="textarea"
+          placeholder="Eksempel: Jeg elsket filmen. Fantastisk skuespill og nydelig musikk..."
+        ></textarea>
+
+        <button id="analyzeBtn" class="button">Analyser anmeldelse</button>
+      </section>
+
+      <section class="card result-card">
+        <h2>Resultat</h2>
+        <div id="resultBox" class="result-box">
+          <p>Ingen analyse enda 🤖</p>
+        </div>
+      </section>
+
+      <section class="card liste">
+        <h2>Tidligere anmeldelser</h2>
+        <ul id="historyList" class="history-list">
+          <li>Ingen tidligere analyser.</li>
+        </ul>
+      </section>
+    </main>
+
+    >
+    <footer class="footer">
+      <p>Laget for sentiment-demo 💚</p>
+    </footer>
+
+    <script src="../js/main2.js"></script>
+  </body>
+</html>

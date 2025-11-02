@@ -1,0 +1,191 @@
+/* Reset-ish */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  color: #eaeaea;
+}
+
+/* Page background */
+body {
+  background-color: #0f172a; /* mørk blå/grå */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header p {
+  margin-top: 0.5rem;
+  color: #94a3b8; /* grå/blå tekst */
+  font-size: 0.95rem;
+}
+
+/* Main layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* to kolonner på større skjermer */
+@media (min-width: 800px) {
+  .container {
+  }
+}
+
+/* Kort / cards */
+.card {
+  background-color: #1e253a; /* litt lysere enn body */
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
+  width: 80%;
+}
+.result-card {
+  width: 60%;
+}
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+/* Label */
+.label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* Textarea */
+.textarea {
+  width: 100%;
+  min-height: 140px;
+  background-color: #0f172a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  resize: vertical;
+  outline: none;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5) inset;
+}
+
+.textarea:focus {
+  border-color: #38bdf8; /* cyan-ish focus */
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+/* Button */
+.button {
+  margin-top: 1rem;
+  width: 100%;
+  background: linear-gradient(to right, #4f46e5, #0ea5e9);
+  color: #fff;
+  border: 0;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.4);
+  transition: all 0.12s ease;
+}
+
+.button:hover {
+  box-shadow: 0 28px 60px rgba(14, 165, 233, 0.55);
+  transform: translateY(-1px) scale(1.01);
+}
+
+/* Result box */
+.result-box {
+  min-height: 120px;
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+  white-space: pre-line; /* så vi kan sette \n fra JS og få linjeskift */
+}
+
+/* Footer */
+.footer {
+  margin-top: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: white 2px solid;
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+  font-size: 0.8rem;
+  color: #475569;
+  max-height: 120px;
+}
+
+/*liste */
+.liste {
+  background-color: #1e253a;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
+}
+
+.liste h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+/* selve <ul> */
+.history-list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 0;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  line-height: 1.4;
+}
+
+/* hvert <li> */
+.history-item {
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+  white-space: pre-line;
+}
